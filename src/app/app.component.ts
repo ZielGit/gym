@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gym';
+  cargando: boolean = true;
+
+  // constructor(private ofAuth: AngularfireAuth)
+  // {
+
+  // }
 }

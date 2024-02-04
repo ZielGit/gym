@@ -3,3 +3,12 @@
     <h2>Install Bootstrap 5</h2>
   </div>
 </div>
+
+<ng-template>
+  <div *ngIf="cargando">
+    cargando ...
+  </div>
+  <app-login></app-login>
+</ng-template>
+
+<router-outlet></router-outlet>
