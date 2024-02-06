@@ -1,4 +1,5 @@
-import { Component } from '@angular/core';
+import { Component, inject } from '@angular/core';
+import { Firestore } from '@angular/fire/firestore';
 
 @Component({
   selector: 'app-root',
@@ -7,10 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gym';
+  firestore: Firestore = inject(Firestore);
   cargando: boolean = true;
 
-  // constructor(private ofAuth: AngularfireAuth)
-  // {
+  constructor()
+  {
 
-  // }
+  }
 }
