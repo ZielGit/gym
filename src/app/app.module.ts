@@ -12,6 +12,7 @@ import { AngularFireModule } from '@angular/fire/compat';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { NavbarComponent } from './components/navbar/navbar.component';
 import { ListadoClientesComponent } from './components/listado-clientes/listado-clientes.component';
+import { AgregarClienteComponent } from './components/agregar-cliente/agregar-cliente.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ListadoClientesComponent } from './components/listado-clientes/listado-
     LoginComponent,
     DashboardComponent,
     NavbarComponent,
-    ListadoClientesComponent
+    ListadoClientesComponent,
+    AgregarClienteComponent
   ],
   imports: [
     BrowserModule,
