@@ -6,6 +6,7 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './components/login/login.component';
 import { environment } from 'src/environments/environment.development';
 import { provideFirebaseApp, initializeApp } from '@angular/fire/app';
+import { getFirestore, provideFirestore } from '@angular/fire/firestore';
 import { getAuth, provideAuth } from '@angular/fire/auth';
 import { AngularFireModule } from '@angular/fire/compat';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
@@ -24,6 +25,7 @@ import { ListadoClientesComponent } from './components/listado-clientes/listado-
     BrowserModule,
     AppRoutingModule,
     provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
     provideAuth(() => getAuth()),
 
     // error solution NullInjectError

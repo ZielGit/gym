@@ -7,7 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'gym';
-  cargando: boolean = true;
+  // cargando: boolean = true;
 
   constructor()
   {
